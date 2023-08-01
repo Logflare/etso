@@ -12,7 +12,6 @@ defmodule Etso.MixProject do
       deps: deps(),
       dialyzer: dialyzer(),
       name: "Logflare Etso",
-      organization: "logflare",
       description: "A forked ETS adapter for Ecto",
       source_url: "https://github.com/logflare/etso",
       docs: docs()
@@ -30,7 +29,7 @@ defmodule Etso.MixProject do
     [
       {:ecto, "~> 3.8"},
       {:dialyxir, "~> 1.0.0-rc.6", only: :dev, runtime: false},
-      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
+      {:ex_doc, "~> 0.27", only: :dev, runtime: false},
       {:jason, "~> 1.1", only: :test, runtime: false}
     ]
   end
