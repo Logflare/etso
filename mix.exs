@@ -3,17 +3,18 @@ defmodule Etso.MixProject do
 
   def project do
     [
-      app: :etso,
-      version: "1.1.1",
+      app: :logflare_etso,
+      version: "1.1.2",
       elixir: "~> 1.8",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       package: package(),
       deps: deps(),
       dialyzer: dialyzer(),
-      name: "Etso",
-      description: "An ETS adapter for Ecto",
-      source_url: "https://github.com/evadne/etso",
+      name: "Logflare Etso",
+      organization: "logflare",
+      description: "A forked ETS adapter for Ecto",
+      source_url: "https://github.com/logflare/etso",
       docs: docs()
     ]
   end
